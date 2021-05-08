@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flash Cards</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="left" onclick="card(-1)"></button>
+      <div id="flip-card">
+        <div id="flip-card-inner">
+          <div id="flip-card-front"></div>
+          <div id="flip-card-back"></div>
+        </div>
+      </div>
+      <button id="right" onclick="card(1)"></button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
