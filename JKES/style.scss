@@ -1,0 +1,147 @@
+$themecolor: tomato;
+// $themecolor: rgb(171, 160, 233);
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: $themecolor;
+    height: 5%;
+    margin-top: 0;
+    border: 2px solid black;
+    display: flex;
+
+    .name {
+        margin-top: 2%;
+        width: 85%;
+        align-items: center;
+        font-size: 32px;
+        font-weight: bolder;
+        float: left;
+    }
+    .image{
+        width: 40%;
+        margin: 1%;
+        img{
+            height: 100%;
+            width: 15%;
+            text-align: center;
+        }
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        li {
+            display: flex;
+            float: left;
+            padding-left: 10px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+
+        li:hover {
+            background-color: grey;
+        }
+    }
+}
+
+.container{
+    display: flex;
+    .main{
+        width: 80%;
+        text-align: justify;
+        padding: 10px;
+        div{
+            margin: 10px;
+        }
+        .address-list{
+            display: flex;
+            .address{
+                padding: 5px;
+                border: 2px solid black;
+                margin: 10px;
+                div{
+                    margin: 2px;
+                }
+                .head{
+                    margin: 5px;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .side{
+        width: 20%;
+        padding-top: 0px;
+        .announcements{
+            margin-top: 25px;
+            padding: 10px;
+            position: sticky;
+            top: 50px;
+            // background-color: black;
+            // color: white;
+            background-color: black;
+            color: white;
+
+            .head{
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+            ul{
+                list-style: none;
+                padding-left: 20px;
+                overflow: hidden;
+                li{
+                    padding: 2px;
+                }
+            }
+        }
+        .gototop{
+            position: sticky;
+            top: 87%;
+            text-align: right;
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 5px;
+            padding: 0;
+            #goto{                
+                // background-color: $themecolor;
+                // border-radius: 25px;
+            }
+            a{
+                padding: 2%;
+                padding-bottom: 0;
+                text-decoration: none;
+                color: black;
+                border: 2px solid black;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $themecolor;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}

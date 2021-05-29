@@ -1,0 +1,166 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: tomato;
+  height: 5%;
+  margin-top: 0;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .name {
+  margin-top: 2%;
+  width: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+  font-weight: bolder;
+  float: left;
+}
+
+header .image {
+  width: 40%;
+  margin: 1%;
+}
+
+header .image img {
+  height: 100%;
+  width: 15%;
+  text-align: center;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  padding-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+nav ul li:hover {
+  background-color: grey;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main {
+  width: 80%;
+  text-align: justify;
+  padding: 10px;
+}
+
+.container .main div {
+  margin: 10px;
+}
+
+.container .main .address-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main .address-list .address {
+  padding: 5px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.container .main .address-list .address div {
+  margin: 2px;
+}
+
+.container .main .address-list .address .head {
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .side {
+  width: 20%;
+  padding-top: 0px;
+}
+
+.container .side .announcements {
+  margin-top: 25px;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  background-color: black;
+  color: white;
+}
+
+.container .side .announcements .head {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .side .announcements ul {
+  list-style: none;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.container .side .announcements ul li {
+  padding: 2px;
+}
+
+.container .side .gototop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 87%;
+  text-align: right;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 5px;
+  padding: 0;
+}
+
+.container .side .gototop a {
+  padding: 2%;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+}
+
+footer {
+  background-color: tomato;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=style.css.map */
