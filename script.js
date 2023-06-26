@@ -11,7 +11,9 @@ fetch(`https://api.github.com/repos/${username}/${repo}/contents`)
       if (item.type === "file" && item.name.endsWith(".html")) {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.href = `https://github.com/${username}/${repo}/blob/master/${item.path}`;
+        a.target = '_blank';
+        a.href = `https://github.com/${username}/${repo}/blob/main/${item.path}`;
+        console.log(a.href);
         a.textContent = item.name;
         li.appendChild(a);
         ul.appendChild(li);
