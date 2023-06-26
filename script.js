@@ -11,7 +11,7 @@ fetch(`https://api.github.com/repos/${username}/${repo}/contents`)
       if (item.type === "dir") {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.href = `https://github.com/${username}/${repo}/tree/master/${item.path}`;
+        a.href = `https://${username}.github.io/${repo}/${item.path}/index.html`;
         console.log(a.href);
         a.textContent = item.name;
         li.appendChild(a);
