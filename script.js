@@ -12,7 +12,6 @@ fetch(`https://api.github.com/repos/${username}/${repo}/contents`)
         const li = document.createElement("li");
         const a = document.createElement("a");
         a.href = `https://github.com/${username}/${repo}/tree/master/${item.path}`;
-        console.log(item.path);
         a.textContent = item.name;
         li.appendChild(a);
         ul.appendChild(li);
