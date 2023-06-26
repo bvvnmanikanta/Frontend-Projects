@@ -8,12 +8,18 @@ fetch(`https://api.github.com/repos/${username}/${repo}/contents`)
     const ul = document.createElement("ul");
 
     data.forEach(item => {
-      if (item.type === "file" && item.name.endsWith(".html")) {
+      if (item.type === "dir") {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.target = '_blank';
-        a.href = `https://github.com/${username}/${repo}/blob/main/${item.path}`;
-        console.log(a.href);
+        a.href = `https://github.com/${username}/${repo}/tree/master/${item.path}`;
+        console.log(item.path);
+        a.textContent = item.name;
+        li.appendChild(a);
+        ul.appendChild(li);
+      } else if (item.type === "file" && item.name.endsWith(".html")) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = `https://github.com/${username}/${repo}/blob/master/${item.path}`;
         a.textContent = item.name;
         li.appendChild(a);
         ul.appendChild(li);
