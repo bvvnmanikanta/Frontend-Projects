@@ -12,7 +12,7 @@ fetch(`https://api.github.com/repos/${username}/${repo}/contents`)
         const li = document.createElement("li");
         const a = document.createElement("a");
         a.target = '_blank';
-        a.href = `https://github.com/${username}/${repo}/blob/main/${item.path}`;
+        a.href = `https://bvvnmanikanta.github.io/${repo}/${item.path}/index.html`;
         console.log(a.href);
         a.textContent = item.name;
         li.appendChild(a);
